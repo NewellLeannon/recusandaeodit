@@ -1,0 +1,50 @@
+{
+  "name": "recusandaeodit",
+  "version": "1.0.0",
+  "description": "Model style decorators for your convict config.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NewellLeannon/recusandaeodit.git"
+  },
+  "engine": {
+    "node": "^10.11.0"
+  },
+  "scripts": {
+    "test": "NODE_PATH=src/ TS_NODE_FILES=true nyc mocha --opts mocha.opts",
+    "lint": "tslint -p tsconfig.json -c tslint.json -t verbose",
+    "build": "NODE_PATH=src/ TS_NODE_FILES=true tsc",
+    "build:prod": "NODE_PATH=src/ TS_NODE_FILES=true tsc -p tsconfig.prod.json"
+  },
+  "author": "JaclynWaters",
+  "license": "ISC",
+  "peerDependencies": {
+    "convict": "^5.0.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "dependencies": {
+    "convict": "^5.0.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/convict": "^4.2.1",
+    "@types/js-yaml": "^3.12.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^9.6.48",
+    "js-yaml": "^3.13.1",
+    "mocha": "^6.1.4",
+    "mocha-typescript": "^1.1.17",
+    "nyc": "^14.1.0",
+    "source-map-support": "^0.5.12",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.16.0",
+    "typescript": "^2.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/NewellLeannon/recusandaeodit.git/issues"
+  }
+}
